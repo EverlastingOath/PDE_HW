@@ -37,12 +37,8 @@
 
 \chapter{数学物理方程简介}% Chapter 1
 
-
-Elegant\LaTeX{} 项目组致力于打造一系列美观、优雅、简便的模板方便用户使用。目前由 \href{https://github.com/ElegantLaTeX/ElegantNote}{ElegantNote}，\href{https://github.com/ElegantLaTeX/ElegantBook}{ElegantBook}，\href{https://github.com/ElegantLaTeX/ElegantPaper}{ElegantPaper} 组成，分别用于排版笔记，书籍和工作论文。大版本改动较大，请关注版本信息，在未开始使用模板前，建议直接选择最新正式版本！
-
-
-本文将介绍本模板的一些设置内容以及基本使用方法。如果您有其他问题，建议或者意见，欢迎在 GitHub 上给我们提交 \href{https://github.com/ElegantLaTeX/ElegantBook/issues}{issues} 或者邮件联系我们。我们的联系方式如下，建议加入用户 QQ 群提问，这样能更快获得准确的反馈，加群时请备注 \LaTeX{} 或者 Elegant\LaTeX{} 相关内容。
-
+数学物理以研究物理问题为目标的数学理论和数学方法。它探讨物理现象的数学模型，即寻求物理现象的数学描述，
+并对模型已确立的物理问题研究其数学解法，然后根据解答来诠释和预见物理现象，或者根据物理事实来修正原有模型。
 
 
 
@@ -165,7 +161,7 @@ Elegant\LaTeX{} 项目组致力于打造一系列美观、优雅、简便的模�
 
 
 
-chapter{分离变量法习题}% Chapter 4
+\chapter{分离变量法习题}% Chapter 4
 
 \begin{introduction}
   \item 分离变量法
@@ -173,10 +169,53 @@ chapter{分离变量法习题}% Chapter 4
   \item 解的存在性
   \item 齐次化原理(Duhamel原理)
   \item 固有函数展开(Fourier级数展开)
+  \item 边界条件齐次化
 \end{introduction}
 \quad
 
+\begin{exercise}
+  解下列定解问题:
 
+  $\begin{cases}
+    u_t=a^2u_{xx}, & 0<x<l,\ t>0,\\
+    u|_{t=0} =\phi (x), & 0\leq x\leq l,\\
+    u_x|_{x=0}=0,u_x|_{x=l}=0, & t\geq 0.
+  \end{cases}$
+\end{exercise}
+\quad
+
+\begin{solution}
+
+\end{solution}
+\quad
+
+\begin{exercise}
+  解下列定解问题:
+
+  (1) $\begin{cases}
+    u_{tt}=a^2u_{xx}+f(x,t), & 0<x<l,\ t>0,\\
+    u|_{t=0} =\phi (x),u_t|_{t=0}=\psi (x), & 0\leq x\leq l,\\
+    u_x|_{x=0}=0,u|_{x=l}=0, & t\geq 0.
+  \end{cases}$
+  
+  \quad
+  
+  (2) $\begin{cases}
+    u_{tt}=a^2u_{xx}, & 0<x<1,\ t>0,\\
+    u|_{t=0}=
+    \begin{cases}
+      x, & 0\leq x\leq \frac{1}{2},\\
+      1-x, & \frac{1}{2}<x\leq 1,
+    \end{cases}\\
+    u_t|_{t=0}=x(1-x), & 0\leq x\leq 1,\\
+    u|_{x=0}=u|_{x=1}=0, & t\geq 0.
+    \end{cases}$
+\end{exercise}
+\quad
+
+\begin{solution}
+  
+\end{solution}
 
 
 
